@@ -1,0 +1,25 @@
+
+public class StaticDemo {
+	static int count;
+	int cout;
+	
+	StaticDemo()
+	{
+		cout=cout+1;
+		
+	}
+	static void display()
+	{
+		System.out.println("the no of objects created is:"+ count);
+	}
+
+	public static void main(String[] args) {
+		
+		StaticDemo s1=new StaticDemo();
+		StaticDemo s2=new StaticDemo();
+		StaticDemo s3=new StaticDemo();
+		StaticDemo.display();
+		s3.display();
+	}
+
+}
